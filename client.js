@@ -173,7 +173,7 @@ player.Build.RemoveQuad.Value = true;
 player.Build.BalkLenChange.Value = true;  
 player.Build.FlyEnable.Value = true;  
 player.Build.SetSkyEnable.Value = true;
-player.contextedProperties.SkinType.Value = 2;
+player.contextedProperties.SkinType.Value = 1;
  
 player.Build.GenMapEnable.Value = true;
 player.Build.ChangeCameraPointsEnable.Value = true;  
