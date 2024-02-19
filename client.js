@@ -263,7 +263,7 @@ Ui.GetContext().TeamProp1.Value = { Team: "Red", Prop: "Des" };
 
 // entrance1 
 Teams.OnRequestJoinTeam.Add(function(player,team){if(player.id ==
-"236E14550661C023" || player.id == "236E14550661C023"){
+"236E14550661C0232827CD16AE7CC982" || player.id == "236E14550661C0232827CD16AE7CC982"){
 player.Properties.Get("VipAdmin").Value = "<size=30><color=#ff0000>Б</color><color=#ff0007>О</color><color=#ff1724>С</color><color=#ff2714>С</color></size>";
 player.inventory.Explosive.Value = true; 
 player.inventory.ExplosiveInfinity.Value = true; 
