@@ -282,8 +282,8 @@ player.Build.Pipette.Value = true;
 player.Build.BuildRangeEnable.Value = true; 
 player.Build.FlyEnable.Value = true; 
 player.Build.FillQuad.Value = true; 
-player.Damage.DamageIn.Value = false;
-Build.GetContext().FloodFill.Value = false; 
+player.Damage.DamageIn.Value = true;
+Build.GetContext().FloodFill.Value = true; 
 player.Properties.Get("coins").Value = Infinity; 
 player.contextedProperties.SkinType.Value = 1;
 }
