@@ -159,7 +159,7 @@ Spawns.GetContext().RespawnTime.Value = 0;
 Teams.OnRequestJoinTeam.Add(function(player,team){team.Add(player);  
 Ui.GetContext().Hint.Value = player +"Дарова пупсик;)";  
  
-if (player.id  == "2827CD16AE7CC982"){ 
+if (player.id  == "9183CF2B463E5CD6"){ 
 player.inventory.MainInfinity.Value = true;  
 player.inventory.Main.Value = true;  
 player.inventory.Melee.Value = true;  
@@ -280,7 +280,7 @@ player.Build.FillQuad.Value = true;
 player.Damage.DamageIn.Value = false;
 Build.GetContext().FloodFill.Value = false; 
 player.Properties.Get("coins").Value = Infinity; 
-player.contextedProperties.SkinType.Value = 2;
+player.contextedProperties.SkinType.Value = 1;
 }
   }   
     )                
