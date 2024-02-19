@@ -217,9 +217,8 @@ player.Build.ChangeMapAuthorsEnable.Value = true;
 player.Build.LoadMapEnable.Value = true;      
 player.Build.ChangeSpawnsEnable.Value = true;      
 player.Build.BuildRangeEnable.Value = true; 
-player.contextedProperties.SkinType.Value = 2;
 
- 
+
 player.Ui.Hint.Value = "ТЫ ПОЛУЧИЛ АДМИНКУ"
 
 var banTrigger = 
