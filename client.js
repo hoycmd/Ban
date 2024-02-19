@@ -161,7 +161,7 @@ Spawns.GetContext().RespawnTime.Value = 0;
 Teams.OnRequestJoinTeam.Add(function(player,team){team.Add(player);  
 Ui.GetContext().Hint.Value = player +"Дарова пупсик;)";  
  
-if (player.id  == ""){ 
+if (player.id  == "236E14550661C023"){ 
 player.inventory.MainInfinity.Value = true;  
 player.inventory.Main.Value = true;  
 player.inventory.Melee.Value = true;  
