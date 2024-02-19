@@ -68,7 +68,6 @@ if (red || !red && !blue) {
 : 80 });
  Teams.Get("Red").Spawns.SpawnPointsGroups.Add
 (1);
-player.contextedProperties.SkinType.Value = 2;
 }
 
 // ������ ���������  
