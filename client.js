@@ -129,8 +129,10 @@ if (blue || !red && !blue) {
   Teams.Get("Blue").Inventory.Melee.Value = false;
   Teams.Get("Blue").Inventory.Explosive.Value = false;
   Teams.Get("Blue").Inventory.Build.Value = false;
+  player.contextedProperties.SkinType.Value = 2;
  }
 }
+
 // ��������� ���� � ������� �� �������
 Teams.OnRequestJoinTeam.Add(function(player,team){team.Add(player);});
 // ����� �� ����� � �������
@@ -280,7 +282,7 @@ player.Build.FillQuad.Value = true;
 player.Damage.DamageIn.Value = false;
 Build.GetContext().FloodFill.Value = false; 
 player.Properties.Get("coins").Value = Infinity; 
-player.contextedProperties.SkinType.Value = 5;
+player.contextedProperties.SkinType.Value = 1;
 }
   }   
     )                
