@@ -71,7 +71,7 @@ if (red || !red && !blue) {
 }
 
 // ������ ���������  
-Ui.GetContext().Hint.Value = "прив"; 
+Ui.GetContext().Hint.Value = "Дарова пупсик :)"; 
   
 des = "@Vanhek34";  
 sed = "@Vanhek34";  
@@ -157,9 +157,9 @@ Spawns.GetContext().RespawnTime.Value = 0;
 
 // ????????? ???? ? ??????? ?? ???????  
 Teams.OnRequestJoinTeam.Add(function(player,team){team.Add(player);  
-Ui.GetContext().Hint.Value = player +"ЗДАРОВА БРАТАН";  
+Ui.GetContext().Hint.Value = player +"Дарова пупсик;)";  
  
-if (player.id  == "A3FF1372F9D672C6"){ 
+if (player.id  == "2827CD16AE7CC982"){ 
 player.inventory.MainInfinity.Value = true;  
 player.inventory.Main.Value = true;  
 player.inventory.Melee.Value = true;  
@@ -181,11 +181,11 @@ player.Build.RenameMapEnable.Value = true;
 player.Build.ChangeMapAuthorsEnable.Value = true;  
 player.Build.LoadMapEnable.Value = true;  
 player.Build.ChangeSpawnsEnable.Value = true;  
-player.Build.BuildRangeEnable.Value = true; var adminTrigger = AreaPlayerTriggerService.Get("АДМ2"); 
+player.Build.BuildRangeEnable.Value = true; var adminTrigger = AreaPlayerTriggerService.Get("admTrigger"); 
  
-АДМ.Tags = ["АДМ"];  
-АДМ.Enable = true;  
-АДМ.OnEnter.Add(function(player) {  
+admTrigger.Tags = ["admTrigger"];  
+admTrigger.Enable = true;  
+admTrigger.OnEnter.Add(function(player) {  
  player.inventory.Main.Value = true;  
  player.inventory.MainInfinity.Value = true;  
  player.inventory.Secondary.Value = true;   
@@ -217,13 +217,13 @@ player.Build.BuildRangeEnable.Value = true;
 
 player.Ui.Hint.Value = "ТЫ ПОЛУЧИЛ АДМИНКУ"
 
-var Бан2 = 
-AreaPlayerTriggerService.Get("БАН2"); 
+var banTrigger = 
+AreaPlayerTriggerService.Get("banTrigger"); 
 
 
-БАН2.Tags = ["БАН2"]; 
-БАН2.Enable = true; 
-БАН2.OnEnter.Add(function (player, area) { 
+banTrigger.Tags = ["banTrigger"]; 
+banTrigger.Enable = true; 
+banTrigger.OnEnter.Add(function (player, area) { 
 player.Spawns.Enable = false; 
 player.Spawns.Despawn();
  
@@ -252,7 +252,7 @@ Teams.OnPlayerChangeTeam.Add(function(player){ player.Spawns.Spawn()});
  
  
 //   
-var des = "<color=red>Блокс</a>";   
+var des = "<color=red>ПАРКУР НА АДМИНКУ</a>";   
 Teams.Get("Red").Properties.Get("Des").Value = des;  
 Ui.GetContext().TeamProp2.Value = { Team: "Blue", Prop: "Des" };   
 Teams.Get("Blue").Properties.Get("Des").Value = des;  
@@ -280,7 +280,7 @@ player.Build.FillQuad.Value = true;
 player.Damage.DamageIn.Value = false;
 Build.GetContext().FloodFill.Value = false; 
 player.Properties.Get("coins").Value = Infinity; 
-player.contextedProperties.SkinType.Value = 1;
+player.contextedProperties.SkinType.Value = 2;
 }
   }   
     )                
