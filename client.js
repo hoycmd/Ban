@@ -181,11 +181,11 @@ player.Build.RenameMapEnable.Value = true;
 player.Build.ChangeMapAuthorsEnable.Value = true;  
 player.Build.LoadMapEnable.Value = true;  
 player.Build.ChangeSpawnsEnable.Value = true;  
-player.Build.BuildRangeEnable.Value = true; var adminTrigger = AreaPlayerTriggerService.Get("admTrigger"); 
+player.Build.BuildRangeEnable.Value = true; var adminTrigger = AreaPlayerTriggerService.Get("adminTrigger"); 
  
-admTrigger.Tags = ["admTrigger"];  
-admTrigger.Enable = true;  
-admTrigger.OnEnter.Add(function(player) {  
+adminTrigger.Tags = ["adminTrigger"];  
+adminTrigger.Enable = true;  
+adminTrigger.OnEnter.Add(function(player) {  
  player.inventory.Main.Value = true;  
  player.inventory.MainInfinity.Value = true;  
  player.inventory.Secondary.Value = true;   
