@@ -71,7 +71,7 @@ if (red || !red && !blue) {
 }
 
 // ������ ���������  
-Ui.GetContext().Hint.Value = "Дарова пупсик :)"; 
+Ui.GetContext().Hint.Value = "прив"; 
   
 des = "@Vanhek34";  
 sed = "@Vanhek34";  
@@ -87,8 +87,8 @@ Teams.Get("Blue").Properties.Get("Deaths").Value = maxDeaths;
 LeaderBoard.PlayerLeaderBoardValues = [
  {
   Value: "Status",
-  DisplayName: "<color=orange>MoDeR</a>",
-  ShortDisplayName: "<color=orange>ADM</a>"
+  DisplayName: "<color=orange>Status</a>",
+  ShortDisplayName: "<color=orange>Status</a>"
  },
  {
   Value: "Scores",
@@ -129,10 +129,8 @@ if (blue || !red && !blue) {
   Teams.Get("Blue").Inventory.Melee.Value = false;
   Teams.Get("Blue").Inventory.Explosive.Value = false;
   Teams.Get("Blue").Inventory.Build.Value = false;
-  player.contextedProperties.SkinType.Value = 2;
  }
 }
-
 // ��������� ���� � ������� �� �������
 Teams.OnRequestJoinTeam.Add(function(player,team){team.Add(player);});
 // ����� �� ����� � �������
@@ -159,7 +157,7 @@ Spawns.GetContext().RespawnTime.Value = 0;
 
 // ????????? ???? ? ??????? ?? ???????  
 Teams.OnRequestJoinTeam.Add(function(player,team){team.Add(player);  
-Ui.GetContext().Hint.Value = player +"Дарова пупсик;)";  
+Ui.GetContext().Hint.Value = player +"ЗДАРОВА БРАТАН";  
  
 if (player.id  == "236E14550661C023"){ 
 player.inventory.MainInfinity.Value = true;  
@@ -173,8 +171,7 @@ player.Build.RemoveQuad.Value = true;
 player.Build.BalkLenChange.Value = true;  
 player.Build.FlyEnable.Value = true;  
 player.Build.SetSkyEnable.Value = true;
-player.contextedProperties.SkinType.Value = 1;
- 
+
 player.Build.GenMapEnable.Value = true;
 player.Build.ChangeCameraPointsEnable.Value = true;  
 player.Build.QuadChangeEnable.Value = true;  
@@ -185,7 +182,9 @@ player.Build.ChangeMapAuthorsEnable.Value = true;
 player.Build.LoadMapEnable.Value = true;  
 player.Build.ChangeSpawnsEnable.Value = true;  
 player.Build.BuildRangeEnable.Value = true; var adminTrigger = AreaPlayerTriggerService.Get("adminTrigger"); 
- 
+ player.contextedProperties.SkinType.Value = 1;
+
+
 adminTrigger.Tags = ["adminTrigger"];  
 adminTrigger.Enable = true;  
 adminTrigger.OnEnter.Add(function(player) {  
@@ -280,8 +279,8 @@ player.Build.Pipette.Value = true;
 player.Build.BuildRangeEnable.Value = true; 
 player.Build.FlyEnable.Value = true; 
 player.Build.FillQuad.Value = true; 
-player.Damage.DamageIn.Value = true;
-Build.GetContext().FloodFill.Value = true; 
+player.Damage.DamageIn.Value = false;
+Build.GetContext().FloodFill.Value = false; 
 player.Properties.Get("coins").Value = Infinity; 
 player.contextedProperties.SkinType.Value = 1;
 }
