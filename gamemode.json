@@ -1,6 +1,6 @@
 {
-  "Name": "<color=red>Dewopailk</a>",
-  "Description": "Vorolhp",
+  "Name": "<color=red>ПАРКУР НА АДМИНКУ ОТ:Блока</a>",
+  "Description": "Паркур на адм от блока:)",
   "StartClientVersion": 334,
   "MapFilter": {
     "IsBlank": false,
@@ -9,7 +9,7 @@
   "MapLists": [
     {
       "MapListId": 324,
-      "Name": "Официальные карты"
+      "Name": "Специальный карт"
     },
     {
       "MapListId": 581
