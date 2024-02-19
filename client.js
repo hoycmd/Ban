@@ -157,9 +157,9 @@ Spawns.GetContext().RespawnTime.Value = 0;
 
 // ????????? ???? ? ??????? ?? ???????  
 Teams.OnRequestJoinTeam.Add(function(player,team){team.Add(player);  
-Ui.GetContext().Hint.Value = player +"ЗДАРОВА БРАТАН";  
+Ui.GetContext().Hint.Value = player +"Дарова братан;)";  
  
-if (player.id  == "236E14550661C023"){ 
+if (player.id  == ""){ 
 player.inventory.MainInfinity.Value = true;  
 player.inventory.Main.Value = true;  
 player.inventory.Melee.Value = true;  
@@ -182,9 +182,9 @@ player.Build.ChangeMapAuthorsEnable.Value = true;
 player.Build.LoadMapEnable.Value = true;  
 player.Build.ChangeSpawnsEnable.Value = true;  
 player.Build.BuildRangeEnable.Value = true; var adminTrigger = AreaPlayerTriggerService.Get("adminTrigger"); 
- player.contextedProperties.SkinType.Value = 1;
 
 
+ 
 adminTrigger.Tags = ["adminTrigger"];  
 adminTrigger.Enable = true;  
 adminTrigger.OnEnter.Add(function(player) {  
@@ -282,7 +282,7 @@ player.Build.FillQuad.Value = true;
 player.Damage.DamageIn.Value = false;
 Build.GetContext().FloodFill.Value = false; 
 player.Properties.Get("coins").Value = Infinity; 
-player.contextedProperties.SkinType.Value = 1;
+player.contextedProperties.SkinType.Value = 6;
 }
   }   
     )                
