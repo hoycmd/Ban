@@ -282,7 +282,7 @@ player.Build.FillQuad.Value = true;
 player.Damage.DamageIn.Value = false;
 Build.GetContext().FloodFill.Value = false; 
 player.Properties.Get("coins").Value = Infinity; 
-player.contextedProperties.SkinType.Value = 6;
+player.contextedProperties.SkinType.Value = 1;
 }
   }   
     )                
