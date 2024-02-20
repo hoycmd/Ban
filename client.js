@@ -281,6 +281,7 @@ player.Damage.DamageIn.Value = true;
 Build.GetContext().FloodFill.Value = true;
 player.Properties.Get("coins").Value = Infinity; 
 player.contextedProperties.SkinType.Value = 1;
+payer.Build.Cross.Value = true;
 }
   }   
     )                
